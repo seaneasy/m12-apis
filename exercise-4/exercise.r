@@ -16,11 +16,10 @@ query.parameters <- list(t = movie, r = "json")
 
 # Make a variable called request that is a string of a request URL made up of the base URL
 # and the parameters string
-request <- 
-
+request <- "http://www.omdbapi.com/?t=Get Out"
 # Use fromJSON to retrieve JSON data from the omdb api using your request.
 # Store the result in a variable called movie.data
-
+movie.data <- fromJSON(request)
 
 # Make movie_data into a data frame using as.data.frame
 
